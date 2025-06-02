@@ -121,10 +121,9 @@ def respond_to_batch(model, ref_model , queries, txt_len=20, top_k=0, top_p=1.0)
                 next_token_logits = top_k_top_p_filtering(next_token_logits, top_k=top_k, top_p=top_p)
 
                 if ref_model is not None:
-                    ref_outputs = ref_model(input_ids)
                     ref_next_token_logits = ref_model(input_ids)[0][:, -1, :]
                     ref_next_token_probs = ref_next_token_logits.softmax(dim=-1)
-                    next_token_logits[ref_next_token_probs < 0.01] = float('-inf')
+                    next_token_logits[ref_next_token_probs < 0.01] = np.NINF
 
                 probs = F.softmax(next_token_logits, dim=-1)
                 next_token = torch.multinomial(probs, num_samples=1).squeeze(1)
