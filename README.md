@@ -1,7 +1,8 @@
 # Đồ án NT522 - GPTFuzzer
 
 ## Note
-- Phải setup môi trường trước khi chạy repo (sẽ bổ bung guidelines trong tương lai)
+- Phải setup môi trường trước khi chạy repo: tạo venv và cài requirements.txt
+- Sử dụng Python 3.8 (em dùng 3.8.20)
 
 ## 1. Chạy inference: tạo ra payload dạng integer để phục vụ cho các quy trình sau
 ```
