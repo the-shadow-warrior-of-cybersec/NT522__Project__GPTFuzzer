@@ -23,7 +23,7 @@ do
     # Định nghĩa đường dẫn đầu vào và thư mục lưu kết quả
     data_path="../_transform_payload/payload_with_length_of_${txt_out_len}.csv"
     save_dir="../_attack_result"
-    php_session_id="etboestu8n0lvhs0cfds4bufg8"
+    php_session_id="i1pb8srhvptnmpkrrtgjvr4ogh"
     url="http://localhost/DVWA/vulnerabilities/sqli/?id="
     security_level="low"
 

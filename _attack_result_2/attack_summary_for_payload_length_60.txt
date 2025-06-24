@@ -1,0 +1,17 @@
+<========== Attack Summary ==========>
+Total Payloads Sent: 4032
+Payloads Bypassed WAF/IDS (True Positive): 3432
+Payloads Exploited Successfully: 1406
+
+<========== Performance Metrics ==========>
+Bypass Rate (Effective Rate): 85.12% (of valid payloads)
+Successful Exploit Rate: 34.87% (of valid payloads)
+Non-Repetition Rate (NRR): 99.83% (of bypassed payloads)
+Semantic Preservation Rate (SPR): 0.00% (of total payloads sent)
+Average Response Time per Processed Payload: 0.0180 seconds
+Average Memory Usage per Processed Payload: 72.61 MB
+Most Effective Payload Type: Unknown (Count: 2681)
+Payload Type Distribution:
+  Unknown: 2681 (66.49%)
+  piggyAtk: 693 (17.19%)
+  booleanAtk: 658 (16.32%)
